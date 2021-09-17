@@ -1,7 +1,7 @@
 body {
     font-size: large;
     min-height: 400px;
-    background: LightGray;
+    background: DarkGray;
     display: grid;
     grid-template-columns: auto 20%;
     grid-template-rows: auto 1fr;
@@ -12,12 +12,18 @@ body {
       "footer navigation";
   }
   header {
-    background: LightSkyBlue;
+    background: rgb(109, 156, 255);
     grid-area: header;
   }
 
+
+  h2
+  {
+    text-align: center;
+  }
+
   nav {
-    background: LightSalmon;
+    background: rgb(236, 197, 21);
     grid-area: navigation;
   }
 
@@ -34,14 +40,21 @@ body {
   }
 
   footer {
-    background: lightpink;
+    background: blanchedalmond;
     grid-area: footer;
   }
 
   #discussion {
-    background: PaleGreen;
+    background: lightblue;
   }
 
   #illustration {
     background: BlanchedAlmond;
+  }
+
+  img
+  {
+    object-fit: cover;
+    width: 100%;
+    max-height: 100%;
   }
