@@ -1,0 +1,47 @@
+body {
+    font-size: large;
+    min-height: 400px;
+    background: LightGray;
+    display: grid;
+    grid-template-columns: auto 20%;
+    grid-template-rows: auto 1fr;
+    grid-gap: 15px;
+    grid-template-areas:
+      "header navigation"
+      "article navigation"
+      "footer navigation";
+  }
+  header {
+    background: LightSkyBlue;
+    grid-area: header;
+  }
+
+  nav {
+    background: LightSalmon;
+    grid-area: navigation;
+  }
+
+  nav ul
+  {
+    margin: 1px;
+    padding-left: 10px;
+    list-style-type: none;
+  }
+
+  article {
+    background: PaleTurquoise;
+    grid-area: article;
+  }
+
+  footer {
+    background: lightpink;
+    grid-area: footer;
+  }
+
+  #discussion {
+    background: PaleGreen;
+  }
+
+  #illustration {
+    background: BlanchedAlmond;
+  }
